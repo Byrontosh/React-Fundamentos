@@ -1,10 +1,16 @@
 import React from 'react'
-import Intro from '../components/effect/Intro'
+import FetchUsers from '../components/effect/FetchUsers'
+import IntroUseEffect from '../components/effect/IntroUseEffect'
+import Time from '../components/effect/Time'
 
 
 const FundamentoUseEffect = () => {
   return (
-    <Intro/>
+    <>
+      <IntroUseEffect/>
+      <Time/>
+      <FetchUsers/>
+    </>
   )
 }
 
