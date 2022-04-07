@@ -1,3 +1,3 @@
 # React-Fundamentos
-Hook de React - useState
+Hook de React - customHooks
 https://es.reactjs.org/docs/hooks-reference.html
