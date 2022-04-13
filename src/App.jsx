@@ -2,10 +2,12 @@
 import {  BrowserRouter,  Routes,  Route } from "react-router-dom";
 import Dashboard from "./layout/Dashboard";
 import Login from "./layout/Login";
+import ActualizarPaciente from "./paginas/ActualizarPaciente";
 import FormularioLogin from "./paginas/FormularioLogin";
-import FundamentoUseEffect from "./paginas/FundamentoUseEffect";
-import FundamentoUseState from "./paginas/FundamentoUseState";
 import LandingPage from "./paginas/LandingPage";
+import ListarPacientes from "./paginas/ListarPacientes";
+import MostrarPaciente from "./paginas/MostrarPaciente";
+import NuevoPaciente from "./paginas/NuevoPaciente";
 
 
 function App() {
@@ -20,9 +22,11 @@ function App() {
           <Route index element={<FormularioLogin/>}/>
         </Route>
 
-        <Route path="/fundamentos" element={<Dashboard />}>
-          <Route path="usestate" element={<FundamentoUseState />} />
-          <Route path="useffect" element={<FundamentoUseEffect />} />
+        <Route path="/pacientes" element={<Dashboard />}>
+        <Route index element={<ListarPacientes/>}/>
+          <Route path='detalle/:id' element={<MostrarPaciente/>}/>
+          <Route path='nuevo' element={<NuevoPaciente/>}/>
+          <Route path='editar/:id' element={<ActualizarPaciente/>}/>
         </Route>
 
       </Routes>

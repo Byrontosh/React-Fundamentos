@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "pacientes": [
+    {
+      "nombre": "TOBBY Actualizado",
+      "propietario": "Byron Loarte",
+      "email": "byron.loarteb@epn.edu.ec",
+      "fecha": "2022-04-13",
+      "telefono": "022692352",
+      "sintomas": "Solo toma agua y ya no juega",
+      "id": 1
+    }
+  ]
+}

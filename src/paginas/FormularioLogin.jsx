@@ -7,11 +7,13 @@ const FormularioLogin = () =>
 {
   const navigate = useNavigate()
   return (
-
+  
   <div className="w-full min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
       <div className="w-full sm:max-w-md p-5 mx-auto">
-        <h2 className="mb-12 text-center text-5xl font-extrabold">APP Fundamentos</h2>
-        
+        <h2 className="mb-5 text-center text-5xl font-extrabold">APPVET</h2>
+        <div class="rounded-full mx-32 border-4 border-orange-800 h-32 w-32 flex items-center justify-center mb-4">
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616574.png" alt="dog" className='w-24 h-24 object-bottom'/>
+        </div>
             <form>
 
               <div className="mb-4">
@@ -67,7 +69,7 @@ const FormularioLogin = () =>
 
               <div className="mt-6">
                 <button 
-                onClick={() => navigate("/fundamentos")}
+                onClick={() => navigate("/pacientes")}
                 className="w-full inline-flex items-center justify-center px-4 py-2 bg-sky-900 border border-transparent rounded-md font-semibold capitalize text-white hover:bg-sky-700 active:bg-sky-700 focus:outline-none focus:border-sky-700 focus:ring focus:ring-sky-200 disabled:opacity-25 transition">
                   Sign In
                 </button>
